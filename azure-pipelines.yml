@@ -11,7 +11,7 @@ resources:
 container: maven3
 steps:
 - task: Maven@3
-    inputs: 
-       mavenPomFile: 'example/pom.xml' 
-       goals: 'package deploy' 
-       mavenAuthenticateFeed: true
+  inputs: 
+    mavenPomFile: 'example/pom.xml' 
+    goals: 'package deploy' 
+    mavenAuthenticateFeed: true
