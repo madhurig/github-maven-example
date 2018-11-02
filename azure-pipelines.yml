@@ -3,11 +3,11 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
-containers: 
-        - container: maven3 
-          image: maven:3-jdk-8
+resources:
+    containers:
+        - image: maven:3-jdk-8
+          name: maven3
           
-container: maven3
 steps: 
   - task: Maven@3
     inputs: 
